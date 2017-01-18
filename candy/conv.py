@@ -40,13 +40,17 @@ class SougouDict(object):
         self.items = []
         self.valid = True
         self.name = os.path.basename(scel_file)
+        self.category = None
+        self.description = None
+        self.sample = None
 
     def parse(self):
         if os.path.getsize(self._scel_file) == 0:
             self.valid = False
             return
         f = open(self._scel_file, 'rb')
-        fp = mmap.mmap(f.fileno(), 0, prot=mmap.PROT_READ)
+        fp = mmap.mmap(f.fileno(), 0)
+
         if not self._verify(fp):
             self.valid = False
             return
