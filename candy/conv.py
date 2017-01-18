@@ -113,7 +113,7 @@ def sougou_main():
             realpath = os.path.join(sougou_dict_dir, scel_file)
 
             sg_dict = SougouDict(realpath)
-            output_path = os.path.join(output_dir, sg_dict.name)
+            output_path = os.path.join(output_dir, sg_dict.name + '.txt')
             if os.path.exists(output_path):
                 print u'%s already processed, skip...' % realpath
                 continue

@@ -20,9 +20,9 @@ START_URLS = [
     # 'http://pinyin.sogou.com/dict/list.php?c=436',  # e-sports
     # 'http://pinyin.sogou.com/dict/list.php?c=389',  # life
     # 'http://pinyin.sogou.com/dict/list.php?c=367',  # sports
-    'http://pinyin.sogou.com/dict/list.php?c=167',  # city
-    'http://pinyin.sogou.com/dict/list.php?c=96',   # engineering
-    'http://pinyin.sogou.com/dict/list.php?c=403',  # entertainment
+    'http://pinyin.sogou.com/dict/cate/index/167',  # city
+    'http://pinyin.sogou.com/dict/cate/index/96',   # engineering
+    'http://pinyin.sogou.com/dict/cate/index/403',  # entertainment
 ]
 
 
